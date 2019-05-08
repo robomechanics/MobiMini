@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="@string/about_app_name"
-            android:textColor="#ffffff" />
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/versionTextView"
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text=""
-            android:textColor="#ffffff" />
+            android:textColor="#000000" />
     </LinearLayout>
 
     <TextView
@@ -44,12 +44,12 @@
         android:layout_marginTop="10dp"
         android:autoLink="web"
         android:background="@drawable/about_message_background"
-        android:paddingBottom="1dp"
-        android:paddingEnd="8dp"
         android:paddingStart="8dp"
         android:paddingTop="1dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="1dp"
         android:text="@string/about_android_text"
-        android:textColor="@color/white" />
+        android:textColor="@color/black" />
 
     <!--
     <WebView

@@ -48,9 +48,9 @@ public class AboutFragment extends Fragment {
         setActionBarTitle(R.string.about_title);
 
         TextView versionTextView = view.findViewById(R.id.versionTextView);
-        if (versionTextView != null) {
-            versionTextView.setText(String.format("v%s", BuildConfig.VERSION_NAME));
-        }
+        //if (versionTextView != null) {
+          //  versionTextView.setText(String.format("v%s", BuildConfig.VERSION_NAME));
+        //}
 
         FragmentActivity activity = getActivity();
         if (activity != null) {
