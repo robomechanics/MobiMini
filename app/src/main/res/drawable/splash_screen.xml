@@ -10,7 +10,7 @@
 
         <bitmap
 
-            android:gravity="center"
-            android:src="@drawable/info_adafruit_logo" />
+            android:gravity="fill_horizontal"
+            android:src="@drawable/rml_logo" />
     </item>
 </layer-list>

@@ -3,5 +3,5 @@
     <item android:drawable="@drawable/roundedborders_gray" android:state_pressed="true" />
     <item android:drawable="@drawable/roundedborders_gray" android:state_focused="true" />
     <item android:drawable="@drawable/roundedborders_gray" android:state_selected="true" />
-    <item android:drawable="@drawable/roundedborders_blue" />
+    <item android:drawable="@drawable/roundedborders_red" />
 </selector>

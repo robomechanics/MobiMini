@@ -13,7 +13,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="80dp"
-        android:src="@drawable/scanner_adaflower"
+        android:src="@drawable/rml_logo"
         tools:ignore="ContentDescription" />
 
     <android.support.design.widget.BottomNavigationView
