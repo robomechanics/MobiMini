@@ -20,13 +20,14 @@
     <!-- Barcode reading -->
     <uses-permission android:name="android.permission.CAMERA" />
 
+    <!--  android:roundIcon="@mipmap/ic_launcher_round" -->
+    <!--   android:icon="@mipmap/ic_launcher" -->
+    
     <!-- App -->
     <application
-        android:name=".BluefruitApplication"
+        android:name=".MobiMiniApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="MobiMini"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <service android:name=".dfu.DfuService" />
@@ -36,7 +37,7 @@
 
         <activity
             android:name=".app.SplashActivity"
-            android:label="@string/app_name"
+            android:label="MobiMini"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -51,13 +52,13 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="bluefruit"
+                    android:host="mobiMini"
                     android:scheme="app" />
             </intent-filter>
         </activity>
         <activity
             android:name=".app.MainActivity"
-            android:label="@string/app_name"
+            android:label="MobiMini"
             android:launchMode="singleTop" />
 
         <!-- DFU Notification -->

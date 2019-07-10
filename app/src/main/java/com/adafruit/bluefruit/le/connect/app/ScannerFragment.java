@@ -47,8 +47,6 @@ import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.adafruit.bluefruit.le.connect.BluefruitApplication;
-import com.adafruit.bluefruit.le.connect.BuildConfig;
 import com.adafruit.bluefruit.le.connect.R;
 import com.adafruit.bluefruit.le.connect.ble.BleUtils;
 import com.adafruit.bluefruit.le.connect.ble.central.BleManager;
@@ -61,7 +59,6 @@ import com.adafruit.bluefruit.le.connect.style.StyledSnackBar;
 import com.adafruit.bluefruit.le.connect.utils.DialogUtils;
 import com.adafruit.bluefruit.le.connect.utils.KeyboardUtils;
 import com.adafruit.bluefruit.le.connect.utils.LocalizationManager;
-import com.squareup.leakcanary.RefWatcher;
 
 import java.util.Locale;
 

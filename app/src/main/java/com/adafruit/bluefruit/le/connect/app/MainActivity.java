@@ -24,7 +24,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.adafruit.bluefruit.le.connect.BluefruitApplication;
+import com.adafruit.bluefruit.le.connect.MobiMiniApplication;
 import com.adafruit.bluefruit.le.connect.R;
 import com.adafruit.bluefruit.le.connect.ble.BleUtils;
 import com.adafruit.bluefruit.le.connect.ble.central.BleManager;
@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity implements ScannerFragment.S
     protected void onResume() {
         super.onResume();
 
-        BluefruitApplication.activityResumed();
+        MobiMiniApplication.activityResumed();
         checkPermissions();
 
         // Observe disconnections
@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity implements ScannerFragment.S
     @Override
     protected void onPause() {
         super.onPause();
-        BluefruitApplication.activityPaused();
+        MobiMiniApplication.activityPaused();
         unregisterGattReceiver();
 
         // Remove location dialog if present

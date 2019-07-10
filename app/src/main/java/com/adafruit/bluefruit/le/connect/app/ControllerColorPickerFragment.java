@@ -20,14 +20,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.adafruit.bluefruit.le.connect.BluefruitApplication;
-import com.adafruit.bluefruit.le.connect.BuildConfig;
 import com.adafruit.bluefruit.le.connect.R;
 import com.adafruit.bluefruit.le.connect.app.neopixel.NeopixelColorPickerFragment;
 import com.larswerkman.holocolorpicker.ColorPicker;
 import com.larswerkman.holocolorpicker.SaturationBar;
 import com.larswerkman.holocolorpicker.ValueBar;
-import com.squareup.leakcanary.RefWatcher;
 
 public class ControllerColorPickerFragment extends Fragment implements ColorPicker.OnColorChangedListener {
     // Log

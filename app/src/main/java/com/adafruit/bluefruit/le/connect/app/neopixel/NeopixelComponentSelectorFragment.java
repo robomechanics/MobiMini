@@ -15,10 +15,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
 
-import com.adafruit.bluefruit.le.connect.BluefruitApplication;
-import com.adafruit.bluefruit.le.connect.BuildConfig;
 import com.adafruit.bluefruit.le.connect.R;
-import com.squareup.leakcanary.RefWatcher;
 
 public class NeopixelComponentSelectorFragment extends AppCompatDialogFragment {
     // Log

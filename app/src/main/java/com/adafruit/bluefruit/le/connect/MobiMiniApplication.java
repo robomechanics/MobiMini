@@ -1,15 +1,13 @@
 package com.adafruit.bluefruit.le.connect;
 
 import android.app.Application;
-import android.content.Context;
-import android.support.annotation.NonNull;
 
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
 
-public class BluefruitApplication extends Application {
+public class MobiMiniApplication extends Application {
     // Log
-    private final static String TAG = BluefruitApplication.class.getSimpleName();
+    private final static String TAG = MobiMiniApplication.class.getSimpleName();
 
     // Data
     private static boolean mIsActivityVisible;
