@@ -22,7 +22,7 @@
 
     <!--  android:roundIcon="@mipmap/ic_launcher_round" -->
     <!--   android:icon="@mipmap/ic_launcher" -->
-    
+
     <!-- App -->
     <application
         android:name=".MobiMiniApplication"
