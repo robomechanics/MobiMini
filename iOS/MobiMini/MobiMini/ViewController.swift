@@ -121,7 +121,7 @@ class ViewController: UIViewController, CBControl, RobotControl {
     }
     
     func setupLoading() {
-        loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: self.view.center.x - 30, y: statusLabel.center.y, width: 50, height: 50))
+        loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: self.view.center.x - 25, y: statusLabel.center.y + 5, width: 50, height: 50))
         loadingIndicator.hidesWhenStopped = true
         loadingIndicator.style = UIActivityIndicatorView.Style.gray
         loadingIndicator.startAnimating()
@@ -129,7 +129,7 @@ class ViewController: UIViewController, CBControl, RobotControl {
         view.addSubview(loadingIndicator)
         view.sendSubviewToBack(loadingIndicator)
     }
-    
+	
     func setUpSongViewController() {
         visualEffectView = UIVisualEffectView()
         visualEffectView.frame = self.view.frame
