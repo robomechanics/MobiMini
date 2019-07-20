@@ -94,7 +94,8 @@ class ViewController: UIViewController, CBControl, RobotControl {
         disconnectButton.addTarget(self, action: #selector(touchEndDisconnect), for: [.touchUpInside, .touchUpOutside])
         
         sendButton.addTarget(self, action: #selector(touchDownSend), for: .touchDown)
-        sendButton.addTarget(self, action: #selector(touchEndSend), for: [.touchUpInside, .touchUpOutside])
+        
+        textBox.clearsOnBeginEditing = true
         
         toggleJoystickButton.addTarget(self, action: #selector(touchDownJoystick), for: .touchDown)
         
@@ -111,7 +112,7 @@ class ViewController: UIViewController, CBControl, RobotControl {
     
     func setupJoyStick() {
         let jStickRadius: CGFloat = 80.0
-        joyStick = JoyStick(x: view.center.x-jStickRadius, y: view.center.y-jStickRadius+40, radius: jStickRadius, stickRadius: 35)
+        joyStick = JoyStick(x: view.center.x-jStickRadius, y: view.center.y-jStickRadius+70, radius: jStickRadius, stickRadius: 35)
         view.addSubview(joyStick)
         view.addSubview(joyStick.stick)
         view.sendSubviewToBack(joyStick.stick)
@@ -120,7 +121,7 @@ class ViewController: UIViewController, CBControl, RobotControl {
     }
     
     func setupLoading() {
-        loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: self.view.center.x - 25, y: statusLabel.center.y, width: 50, height: 50))
+        loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: self.view.center.x - 30, y: statusLabel.center.y, width: 50, height: 50))
         loadingIndicator.hidesWhenStopped = true
         loadingIndicator.style = UIActivityIndicatorView.Style.gray
         loadingIndicator.startAnimating()
@@ -359,9 +360,9 @@ class ViewController: UIViewController, CBControl, RobotControl {
         }
     }
     
-    @objc
-    func touchEndSend() {
-        
+    @IBAction func sendKeyPressed(_ sender: Any) {
+        touchDownSend()
+        print("works")
     }
     
     func sendData(value: Int8) -> Bool {
@@ -467,7 +468,7 @@ extension ViewController: CBPeripheralDelegate {
     }
     
     private func getData(from characteristic: CBCharacteristic) -> Character {
-        guard let characteristicData = characteristic.value, let byte = characteristicData.first else {return Character("E")}
+        guard let characteristicData = characteristic.value, let byte = characteristicData.first else {return Character("")}
         return Character(UnicodeScalar(byte))
     }
 }
