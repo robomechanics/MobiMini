@@ -362,7 +362,7 @@ class ViewController: UIViewController, CBControl, RobotControl {
     
     @IBAction func sendKeyPressed(_ sender: Any) {
         touchDownSend()
-        print("works")
+		dismissKeyboard()
     }
     
     func sendData(value: Int8) -> Bool {
